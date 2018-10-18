@@ -1,0 +1,94 @@
+#navBar{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    top: -100px;
+    min-height: 50px;
+    min-width: 100vw;
+    overflow: hidden;
+    z-index: 9999;
+    padding: 25px;
+}
+
+.layout-gallery
+{
+    position: relative;
+    text-align:center;
+}
+
+.image-crop {
+    display: inline-block;
+   text-align: center; /* ensures the image is always in the h-middle */
+   overflow: hidden; /* hide the cropped portion */
+}
+
+.image-crop img{
+    position: relative; /* allows repositioning */
+    left: 100%; /* move the whole width of the image to the right */
+    margin-left: -200%; /* magic! */
+}
+
+#lightbox {
+    z-index: 9999999999;
+}
+#lightbox span{
+	color: white;
+	margin-right: 20px;
+    float: right;
+	/* z-index: 200; */
+     
+}
+#lightbox img{
+	
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+	vertical-align: middle;
+	max-height: 80vh;
+	max-width: 80vw;
+	box-shadow: 0 0 25px #111;
+	/* z-index: 201; */
+}
+
+.multi-parallax{
+    z-index: -1;
+}
+
+.layout-clear{
+    height: 0px;
+    background-color: transparent;
+}
+
+.layout{
+    width: 100vw;
+    background-color: #D5827C;
+}
+.layout-item{
+    background-color: #efaa77;
+    box-shadow: 4px 5px 10px rgba(0,0,0,1);
+}
+
+
+.layout-container:last-child{
+    box-shadow: 0px -5px 3px rgba(0,0,0,0.8)
+}
+
+
+.layout-clear-top{
+    position: relative;
+    top: -100px;
+    height: 100px;
+    width: 100vw;
+    background-color: transparent;
+    background:  url("../media/gradient_top.png");
+    background-size: contain;
+}
+
+
+.layout-clear-bottom{
+    position: relative;
+    height: 100px;
+    width: 100vw;
+    background-color: transparent;
+    background:  url("../media/gradient_bottom.png");
+    background-size: contain;
+}
